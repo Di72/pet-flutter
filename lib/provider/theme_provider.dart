@@ -20,17 +20,28 @@ class ThemeProvider extends ChangeNotifier {
 }
 
 class MyThemes {
-  static final darkTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.grey.shade900,
-    primaryColor: Colors.black,
-    colorScheme: ColorScheme.dark(),
-    iconTheme: IconThemeData(color: Colors.purple.shade200, opacity: 0.8),
-  );
-
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     primaryColor: Colors.white,
+    appBarTheme: AppBarTheme(
+      color: Colors.amber[50],
+      titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
+      iconTheme: IconThemeData(color: Colors.black),
+    ),
     colorScheme: ColorScheme.light(),
-    iconTheme: IconThemeData(color: Colors.red, opacity: 0.8),
+    backgroundColor: Color(0xff8E97FD),
+    iconTheme: IconThemeData(color: Color(0xFFC5C5C5)),
   );
+
+  static final darkTheme = ThemeData(
+      scaffoldBackgroundColor: Colors.grey.shade900,
+      primaryColor: Colors.black,
+      appBarTheme: AppBarTheme(
+        color: Colors.grey[600],
+        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+        iconTheme: IconThemeData(color: Colors.white),
+      ),
+      colorScheme: ColorScheme.dark(),
+      backgroundColor: Colors.red[400],
+      iconTheme: IconThemeData(color: Colors.grey.shade900));
 }

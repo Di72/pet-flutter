@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
-import 'package:flutter_application_1/screen/home/home.dart';
+import 'package:flutter_application_1/screen/cats/cats.dart';
 import 'package:flutter_application_1/screen/welcome/components/sign_up.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -36,6 +36,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
     final Size _size = MediaQuery.of(context).size;
 
     return SafeArea(
+      top: false,
       child: Stack(
         children: [
           SizedBox(
@@ -44,7 +45,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
           ),
           SvgPicture.asset(
             "assets/icons/Frame.svg",
-            color: Colors.amber[50],
+            color: Theme.of(context).appBarTheme.color,
             fit: BoxFit.fitHeight,
           ),
           AnimatedPositioned(
@@ -94,7 +95,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
               child: ElevatedButton(
                 onPressed: () {
                   if (_isShowNextFields) {
-                    Navigator.pushNamed(context, Home.routeName);
+                    Navigator.pushNamed(context, Cats.routeName);
                     _controller.reset();
                   } else {
                     _controller.forward();
@@ -117,7 +118,8 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
                       ],
                     )),
                 style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(), primary: secondaryColor),
+                    shape: const StadiumBorder(),
+                    primary: Theme.of(context).backgroundColor),
               ),
             ),
           )

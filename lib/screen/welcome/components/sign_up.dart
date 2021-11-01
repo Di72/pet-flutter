@@ -10,7 +10,7 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Column(
         children: [
           Text(S.of(context).lorem_ipsum,
@@ -21,7 +21,7 @@ class SignUp extends StatelessWidget {
               )),
           Padding(
             padding: const EdgeInsets.only(
-                top: defaultPadding * 2, bottom: defaultPadding),
+                top: kDefaultPadding * 2, bottom: kDefaultPadding),
             child: TextFormField(
               textAlign: TextAlign.center,
               keyboardType: TextInputType.text,
@@ -31,7 +31,7 @@ class SignUp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(88),
                 ),
                 filled: true,
-                contentPadding: const EdgeInsets.all(defaultPadding),
+                contentPadding: const EdgeInsets.all(kDefaultPadding),
               ),
             ),
           ),
@@ -45,7 +45,7 @@ class SignUp extends StatelessWidget {
                 borderRadius: BorderRadius.circular(88),
               ),
               filled: true,
-              contentPadding: const EdgeInsets.all(defaultPadding),
+              contentPadding: const EdgeInsets.all(kDefaultPadding),
             ),
           ),
         ],

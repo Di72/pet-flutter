@@ -1,1 +1,1 @@
-enum MenuState { cats, dogs, quiz }
+enum MenuState { first, dogs, quiz }

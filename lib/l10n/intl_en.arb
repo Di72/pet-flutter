@@ -3,5 +3,7 @@
   "lorem_ipsum_long": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
   "sign_up": "SIGN UP",
   "continued": "CONTINUED",
-  "cats": "Cats"
+  "first": "First",
+  "search": "Search",
+  "response": "Responce:"
 }

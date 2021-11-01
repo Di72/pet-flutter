@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
-import 'package:flutter_application_1/screen/cats/cats.dart';
+import 'package:flutter_application_1/screen/first/first.dart';
 import 'package:flutter_application_1/screen/welcome/components/sign_up.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -61,14 +61,15 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
               top: _size.height * 0.1,
               left: _isShowNextFields ? -_size.width * 2 : 0,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset('assets/images/Women.png'),
                     Padding(
                       padding: const EdgeInsets.only(
-                          top: 150.0, bottom: defaultPadding),
+                          top: 150.0, bottom: kDefaultPadding),
                       child: Text(S.of(context).lorem_ipsum,
                           textAlign: TextAlign.center,
                           style: const TextStyle(
@@ -82,7 +83,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
                           style: const TextStyle(
                               fontSize: 11,
                               fontWeight: FontWeight.w300,
-                              color: secondaryFont),
+                              color: kSecondaryColor),
                         ))
                   ],
                 ),
@@ -95,7 +96,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
               child: ElevatedButton(
                 onPressed: () {
                   if (_isShowNextFields) {
-                    Navigator.pushNamed(context, Cats.routeName);
+                    Navigator.pushNamed(context, First.routeName);
                     _controller.reset();
                   } else {
                     _controller.forward();

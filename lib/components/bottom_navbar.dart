@@ -35,7 +35,7 @@ class CustomBottomNavBar extends StatelessWidget {
             children: [
               IconButton(
                   icon: Icon(Icons.favorite),
-                  color: MenuState.cats == selectedMenu
+                  color: MenuState.first == selectedMenu
                       ? inActiveIconColor
                       : Theme.of(context).iconTheme.color,
                   onPressed: () => {}

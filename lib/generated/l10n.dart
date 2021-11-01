@@ -90,11 +90,31 @@ class S {
     );
   }
 
-  /// `Cats`
-  String get cats {
+  /// `First`
+  String get first {
     return Intl.message(
-      'Cats',
-      name: 'cats',
+      'First',
+      name: 'first',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Responce:`
+  String get response {
+    return Intl.message(
+      'Responce:',
+      name: 'response',
       desc: '',
       args: [],
     );

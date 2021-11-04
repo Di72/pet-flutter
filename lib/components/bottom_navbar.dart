@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/enums.dart';
+import 'package:flutter_application_1/screen/first/first.dart';
+import 'package:flutter_application_1/screen/second/second.dart';
+import 'package:flutter_application_1/screen/third/third.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
@@ -34,28 +37,26 @@ class CustomBottomNavBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(
-                  icon: Icon(Icons.favorite),
-                  color: MenuState.first == selectedMenu
-                      ? inActiveIconColor
-                      : Theme.of(context).iconTheme.color,
-                  onPressed: () => {}
-                  // Navigator.pushNamed(context, CatsScreen.routeName),
-                  ),
-              IconButton(
-                icon: Icon(Icons.pets),
-                color: MenuState.dogs == selectedMenu
+                icon: Icon(Icons.favorite),
+                color: MenuState.first == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(context, First.routeName),
               ),
               IconButton(
-                  icon: Icon(Icons.quiz),
-                  color: MenuState.quiz == selectedMenu
-                      ? inActiveIconColor
-                      : Theme.of(context).iconTheme.color,
-                  onPressed: () => {}
-                  // Navigator.pushNamed(context, ProfileScreen.routeName),
-                  ),
+                icon: Icon(Icons.pets),
+                color: MenuState.second == selectedMenu
+                    ? inActiveIconColor
+                    : Theme.of(context).iconTheme.color,
+                onPressed: () => Navigator.pushNamed(context, Second.routeName),
+              ),
+              IconButton(
+                icon: Icon(Icons.quiz),
+                color: MenuState.third == selectedMenu
+                    ? inActiveIconColor
+                    : Theme.of(context).iconTheme.color,
+                onPressed: () => Navigator.pushNamed(context, Third.routeName),
+              ),
             ],
           )),
     );

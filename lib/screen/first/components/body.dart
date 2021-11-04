@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/api.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
+import 'package:flutter_application_1/models/Product.dart';
 import 'package:flutter_application_1/screen/first/components/banner_scroll.dart';
+import 'package:flutter_application_1/screen/first/components/product_card.dart';
 import 'package:flutter_application_1/screen/first/components/header.dart';
 
 class Body extends StatefulWidget {
@@ -49,6 +51,18 @@ class _BodyState extends State<Body> {
           ),
         ),
         BannerScroll(),
+        SizedBox(height: _size.height * 0.05),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              ...List.generate(
+                demoProducts.length,
+                (index) => ProductCard(size: _size, index: index),
+              ),
+            ],
+          ),
+        )
       ]),
     );
   }

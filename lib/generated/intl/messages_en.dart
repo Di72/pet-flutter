@@ -28,6 +28,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"),
         "response": MessageLookupByLibrary.simpleMessage("Responce:"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
-        "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP")
+        "second": MessageLookupByLibrary.simpleMessage("Second"),
+        "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP"),
+        "third": MessageLookupByLibrary.simpleMessage("Третий")
       };
 }

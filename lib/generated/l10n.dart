@@ -100,6 +100,26 @@ class S {
     );
   }
 
+  /// `Second`
+  String get second {
+    return Intl.message(
+      'Second',
+      name: 'second',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Третий`
+  String get third {
+    return Intl.message(
+      'Третий',
+      name: 'third',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Search`
   String get search {
     return Intl.message(

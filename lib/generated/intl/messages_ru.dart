@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое."),
         "response": MessageLookupByLibrary.simpleMessage("Ответ:"),
         "search": MessageLookupByLibrary.simpleMessage("Поиск"),
-        "sign_up": MessageLookupByLibrary.simpleMessage("Зарегистрироваться")
+        "second": MessageLookupByLibrary.simpleMessage("Второй"),
+        "sign_up": MessageLookupByLibrary.simpleMessage("Зарегистрироваться"),
+        "third": MessageLookupByLibrary.simpleMessage("Третий")
       };
 }

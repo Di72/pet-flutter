@@ -30,6 +30,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "second": MessageLookupByLibrary.simpleMessage("Second"),
         "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP"),
-        "third": MessageLookupByLibrary.simpleMessage("Третий")
+        "third": MessageLookupByLibrary.simpleMessage("Third")
       };
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
+import 'package:flutter_application_1/responsive.dart';
 import 'package:flutter_application_1/screen/first/first.dart';
 import 'package:flutter_application_1/screen/welcome/components/sign_up.dart';
 import 'package:flutter_svg/svg.dart';
@@ -56,38 +57,39 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
             top: _size.height - 700,
             child: const SignUp(),
           ),
-          AnimatedPositioned(
-              duration: const Duration(milliseconds: 500),
-              top: _size.height * 0.1,
-              left: _isShowNextFields ? -_size.width * 2 : 0,
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Image.asset('assets/images/Women.png'),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 150.0, bottom: kDefaultPadding),
-                      child: Text(S.of(context).lorem_ipsum,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.w500)),
-                    ),
-                    SizedBox(
-                        width: 200,
-                        child: Text(
-                          S.of(context).lorem_ipsum_long,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w300,
-                              color: kSecondaryColor),
-                        ))
-                  ],
-                ),
-              )),
+          if (Responsive.isMobile(context))
+            AnimatedPositioned(
+                duration: const Duration(milliseconds: 500),
+                top: _size.height * 0.1,
+                left: _isShowNextFields ? -_size.width * 2 : 0,
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Image.asset('assets/images/Women.png'),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            top: 150.0, bottom: kDefaultPadding),
+                        child: Text(S.of(context).lorem_ipsum,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                                fontSize: 30, fontWeight: FontWeight.w500)),
+                      ),
+                      SizedBox(
+                          width: 200,
+                          child: Text(
+                            S.of(context).lorem_ipsum_long,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w300,
+                                color: kSecondaryColor),
+                          ))
+                    ],
+                  ),
+                )),
           Positioned(
             bottom: _size.height * 0.1,
             left: _size.height * 0.025,
@@ -113,9 +115,11 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
                       children: [
                         _isShowNextFields
                             ? Text(S.of(context).continued,
-                                style: const TextStyle(fontSize: 14))
+                                style: const TextStyle(
+                                    fontSize: 14, color: Colors.white))
                             : Text(S.of(context).sign_up,
-                                style: const TextStyle(fontSize: 14)),
+                                style: const TextStyle(
+                                    fontSize: 14, color: Colors.white)),
                       ],
                     )),
                 style: ElevatedButton.styleFrom(

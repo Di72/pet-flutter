@@ -110,10 +110,10 @@ class S {
     );
   }
 
-  /// `Третий`
+  /// `Third`
   String get third {
     return Intl.message(
-      'Третий',
+      'Third',
       name: 'third',
       desc: '',
       args: [],

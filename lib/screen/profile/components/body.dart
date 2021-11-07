@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/models/Menu.dart';
-import 'package:flutter_application_1/screen/second/components/avatar_pic.dart';
+import 'package:flutter_application_1/screen/profile/components/avatar_pic.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {

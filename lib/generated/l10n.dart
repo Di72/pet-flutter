@@ -90,31 +90,31 @@ class S {
     );
   }
 
-  /// `First`
-  String get first {
+  /// `Main`
+  String get main {
     return Intl.message(
-      'First',
-      name: 'first',
+      'Main',
+      name: 'main',
       desc: '',
       args: [],
     );
   }
 
-  /// `Second`
-  String get second {
+  /// `Profile`
+  String get profile {
     return Intl.message(
-      'Second',
-      name: 'second',
+      'Profile',
+      name: 'profile',
       desc: '',
       args: [],
     );
   }
 
-  /// `Third`
-  String get third {
+  /// `Quiz`
+  String get quiz {
     return Intl.message(
-      'Third',
-      name: 'third',
+      'Quiz',
+      name: 'quiz',
       desc: '',
       args: [],
     );
@@ -130,11 +130,11 @@ class S {
     );
   }
 
-  /// `Responce:`
-  String get response {
+  /// `Responce`
+  String get question {
     return Intl.message(
-      'Responce:',
-      name: 'response',
+      'Responce',
+      name: 'question',
       desc: '',
       args: [],
     );

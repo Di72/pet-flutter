@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/enums.dart';
-import 'package:flutter_application_1/screen/first/first.dart';
-import 'package:flutter_application_1/screen/second/second.dart';
-import 'package:flutter_application_1/screen/third/third.dart';
+import 'package:flutter_application_1/screen/main/main.dart';
+import 'package:flutter_application_1/screen/profile/profile.dart';
+import 'package:flutter_application_1/screen/quiz/quiz.dart';
 import 'package:get/get.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -39,24 +39,24 @@ class CustomBottomNavBar extends StatelessWidget {
             children: [
               IconButton(
                 icon: Icon(Icons.favorite),
-                color: MenuState.first == selectedMenu
+                color: MenuState.main == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () => Get.toNamed(First.routeName),
+                onPressed: () => Get.toNamed(Main.routeName),
               ),
               IconButton(
                 icon: Icon(Icons.pets),
-                color: MenuState.second == selectedMenu
+                color: MenuState.profile == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () => Get.toNamed(Second.routeName),
+                onPressed: () => Get.toNamed(Profile.routeName),
               ),
               IconButton(
                 icon: Icon(Icons.quiz),
-                color: MenuState.third == selectedMenu
+                color: MenuState.quiz == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () => Get.toNamed(Third.routeName),
+                onPressed: () => Get.toNamed(Quiz.routeName),
               ),
             ],
           )),

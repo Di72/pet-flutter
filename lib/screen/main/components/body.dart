@@ -3,9 +3,9 @@ import 'package:flutter_application_1/api.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 import 'package:flutter_application_1/models/Product.dart';
-import 'package:flutter_application_1/screen/first/components/banner_scroll.dart';
-import 'package:flutter_application_1/screen/first/components/product_card.dart';
-import 'package:flutter_application_1/screen/first/components/header.dart';
+import 'package:flutter_application_1/screen/main/components/banner_scroll.dart';
+import 'package:flutter_application_1/screen/main/components/product_card.dart';
+import 'package:flutter_application_1/screen/main/components/header.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -15,11 +15,11 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  var _value;
+  var _temp;
   void getData() async {
-    api(url: 'team/53/events').then((value) => {
+    api(params: '&q=Samara&units=metric').then((value) => {
           setState(() {
-            _value = value[0]["name"];
+            _temp = value['main']['temp'];
           })
         });
   }
@@ -45,7 +45,7 @@ class _BodyState extends State<Body> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
-                  "${S.of(context).response} $_value",
+                  "${S.of(context).question} ${_temp?.round()}",
                   style: TextStyle(fontSize: 20),
                 )
               ],

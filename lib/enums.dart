@@ -1,1 +1,1 @@
-enum MenuState { first, second, third }
+enum MenuState { main, profile, quiz }

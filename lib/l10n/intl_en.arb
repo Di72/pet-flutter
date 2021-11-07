@@ -3,9 +3,9 @@
   "lorem_ipsum_long": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
   "sign_up": "SIGN UP",
   "continued": "CONTINUED",
-  "first": "First",
-  "second": "Second",
-  "third": "Third",
+  "main": "Main",
+  "profile": "Profile",
+  "quiz": "Quiz",
   "search": "Search",
-  "response": "Responce:"
+  "question": "Responce"
 }

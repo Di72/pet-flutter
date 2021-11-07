@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 import 'package:flutter_application_1/responsive.dart';
-import 'package:flutter_application_1/screen/first/first.dart';
+import 'package:flutter_application_1/screen/main/main.dart';
 import 'package:flutter_application_1/screen/welcome/components/sign_up.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -99,7 +99,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
               child: ElevatedButton(
                 onPressed: () {
                   if (_isShowNextFields) {
-                    Get.toNamed(First.routeName);
+                    Get.toNamed(Main.routeName);
                     _controller.reset();
                   } else {
                     _controller.forward();

@@ -22,15 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "continued": MessageLookupByLibrary.simpleMessage("Продолжить"),
-        "first": MessageLookupByLibrary.simpleMessage("Первый"),
         "lorem_ipsum":
             MessageLookupByLibrary.simpleMessage("Проснувшись однажды"),
         "lorem_ipsum_long": MessageLookupByLibrary.simpleMessage(
             "Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое."),
-        "response": MessageLookupByLibrary.simpleMessage("Ответ:"),
+        "main": MessageLookupByLibrary.simpleMessage("Главный"),
+        "profile": MessageLookupByLibrary.simpleMessage("Профиль"),
+        "question": MessageLookupByLibrary.simpleMessage("Вопрос"),
+        "quiz": MessageLookupByLibrary.simpleMessage("Викторина"),
         "search": MessageLookupByLibrary.simpleMessage("Поиск"),
-        "second": MessageLookupByLibrary.simpleMessage("Второй"),
-        "sign_up": MessageLookupByLibrary.simpleMessage("Зарегистрироваться"),
-        "third": MessageLookupByLibrary.simpleMessage("Третий")
+        "sign_up": MessageLookupByLibrary.simpleMessage("Зарегистрироваться")
       };
 }

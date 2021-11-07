@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/controllers/answers.dart';
+import 'package:flutter_application_1/generated/l10n.dart';
 import 'package:flutter_application_1/models/Answers.dart';
-import 'package:flutter_application_1/screen/third/components/answer_field.dart';
-import 'package:flutter_application_1/screen/third/components/reset_button.dart';
+import 'package:flutter_application_1/screen/quiz/components/answer_field.dart';
+import 'package:flutter_application_1/screen/quiz/components/reset_button.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 
@@ -25,7 +26,7 @@ class Body extends StatelessWidget {
               height: _size.height * 0.1,
             ),
             Obx(() => Text(
-                  "Question: 2 + 2 = ${_controller.isRight.value ? 4 : '?'}",
+                  "${S.of(context).question}: 2 + 2 = ${_controller.isRight.value ? 4 : '?'}",
                   style: TextStyle(fontSize: 20),
                 )),
             SizedBox(

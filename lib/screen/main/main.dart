@@ -5,23 +5,23 @@ import 'package:flutter_application_1/components/mock_responsive.dart';
 import 'package:flutter_application_1/enums.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 import 'package:flutter_application_1/responsive.dart';
-import 'package:flutter_application_1/screen/second/components/body.dart';
+import 'package:flutter_application_1/screen/main/components/body.dart';
 
-class Second extends StatelessWidget {
-  const Second({Key? key}) : super(key: key);
-  static String routeName = "/second";
+class Main extends StatelessWidget {
+  const Main({Key? key}) : super(key: key);
+  static String routeName = "/main";
 
   @override
   Widget build(BuildContext context) {
     if (Responsive.isMobile(context)) {
       return Scaffold(
         appBar: AppBar(
-          title: Text(S.of(context).second),
+          title: Text(S.of(context).main),
           actions: [ChangeThemeButton()],
         ),
         body: const Body(),
         bottomNavigationBar:
-            const CustomBottomNavBar(selectedMenu: MenuState.second),
+            const CustomBottomNavBar(selectedMenu: MenuState.main),
       );
     } else {
       return const Scaffold(body: MockResponsive());

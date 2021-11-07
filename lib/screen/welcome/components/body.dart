@@ -5,6 +5,7 @@ import 'package:flutter_application_1/responsive.dart';
 import 'package:flutter_application_1/screen/first/first.dart';
 import 'package:flutter_application_1/screen/welcome/components/sign_up.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -98,7 +99,7 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
               child: ElevatedButton(
                 onPressed: () {
                   if (_isShowNextFields) {
-                    Navigator.pushNamed(context, First.routeName);
+                    Get.toNamed(First.routeName);
                     _controller.reset();
                   } else {
                     _controller.forward();

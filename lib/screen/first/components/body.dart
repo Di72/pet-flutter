@@ -34,36 +34,38 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     final Size _size = MediaQuery.of(context).size;
     return SafeArea(
-      child: Column(children: [
-        SizedBox(height: _size.height * 0.015),
-        Header(),
-        SizedBox(height: _size.height * 0.05),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "${S.of(context).response} $_value",
-                style: TextStyle(fontSize: 20),
-              )
-            ],
+      child: SingleChildScrollView(
+        child: Column(children: [
+          SizedBox(height: _size.height * 0.015),
+          Header(),
+          SizedBox(height: _size.height * 0.05),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  "${S.of(context).response} $_value",
+                  style: TextStyle(fontSize: 20),
+                )
+              ],
+            ),
           ),
-        ),
-        BannerScroll(),
-        SizedBox(height: _size.height * 0.05),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              ...List.generate(
-                demoProducts.length,
-                (index) => ProductCard(size: _size, index: index),
-              ),
-            ],
-          ),
-        )
-      ]),
+          BannerScroll(),
+          SizedBox(height: _size.height * 0.05),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                ...List.generate(
+                  demoProducts.length,
+                  (index) => ProductCard(size: _size, index: index),
+                ),
+              ],
+            ),
+          )
+        ]),
+      ),
     );
   }
 }

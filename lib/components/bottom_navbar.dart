@@ -3,6 +3,7 @@ import 'package:flutter_application_1/enums.dart';
 import 'package:flutter_application_1/screen/first/first.dart';
 import 'package:flutter_application_1/screen/second/second.dart';
 import 'package:flutter_application_1/screen/third/third.dart';
+import 'package:get/get.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
@@ -41,21 +42,21 @@ class CustomBottomNavBar extends StatelessWidget {
                 color: MenuState.first == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () => Navigator.pushNamed(context, First.routeName),
+                onPressed: () => Get.toNamed(First.routeName),
               ),
               IconButton(
                 icon: Icon(Icons.pets),
                 color: MenuState.second == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () => Navigator.pushNamed(context, Second.routeName),
+                onPressed: () => Get.toNamed(Second.routeName),
               ),
               IconButton(
                 icon: Icon(Icons.quiz),
                 color: MenuState.third == selectedMenu
                     ? inActiveIconColor
                     : Theme.of(context).iconTheme.color,
-                onPressed: () => Navigator.pushNamed(context, Third.routeName),
+                onPressed: () => Get.toNamed(Third.routeName),
               ),
             ],
           )),

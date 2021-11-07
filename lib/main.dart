@@ -4,6 +4,7 @@ import 'package:flutter_application_1/provider/theme_provider.dart';
 import 'package:flutter_application_1/routes.dart';
 import 'package:flutter_application_1/screen/welcome/welcome.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         create: (context) => ThemeProvider(),
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
-          return MaterialApp(
+          return GetMaterialApp(
             localizationsDelegates: const [
               S.delegate,
               GlobalMaterialLocalizations.delegate,

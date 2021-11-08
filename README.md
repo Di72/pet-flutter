@@ -1,5 +1,5 @@
 ## Gif fast review
-<img src="https://raw.githubusercontent.com/Di72/img/master/image/gifMobileApp.gif" width="70%">
+<img src="https://raw.githubusercontent.com/Di72/img/master/image/gifMobileApp.gif" width="40%">
 
 ## Features
 

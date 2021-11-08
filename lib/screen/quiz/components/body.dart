@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/controllers/answers.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
-import 'package:flutter_application_1/models/Answers.dart';
-import 'package:flutter_application_1/screen/quiz/components/answer_field.dart';
+import 'package:flutter_application_1/screen/quiz/components/answers.dart';
 import 'package:flutter_application_1/screen/quiz/components/reset_button.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
@@ -32,8 +31,7 @@ class Body extends StatelessWidget {
             SizedBox(
               height: _size.height * 0.05,
             ),
-            ...List.generate(answers.length,
-                (index) => FieldAnswer(controller: _controller, index: index)),
+            Answers(controller: _controller),
             ResetButton(controller: _controller, size: _size)
           ],
         ),

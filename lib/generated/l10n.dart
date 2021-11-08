@@ -120,10 +120,10 @@ class S {
     );
   }
 
-  /// `Search`
+  /// `Search city`
   String get search {
     return Intl.message(
-      'Search',
+      'Search city',
       name: 'search',
       desc: '',
       args: [],

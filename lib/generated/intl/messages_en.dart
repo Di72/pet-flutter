@@ -29,7 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "question": MessageLookupByLibrary.simpleMessage("Responce"),
         "quiz": MessageLookupByLibrary.simpleMessage("Quiz"),
-        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "search": MessageLookupByLibrary.simpleMessage("Search city"),
         "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP")
       };
 }

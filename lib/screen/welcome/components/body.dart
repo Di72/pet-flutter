@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
-import 'package:flutter_application_1/responsive.dart';
 import 'package:flutter_application_1/screen/main/main.dart';
+import 'package:flutter_application_1/screen/welcome/components/greetings.dart';
 import 'package:flutter_application_1/screen/welcome/components/sign_up.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -61,36 +60,11 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
           ),
           AnimatedPositioned(
               duration: const Duration(milliseconds: 500),
+              width: _size.width,
+              height: _size.height,
               top: _size.height * 0.1,
-              left: _isShowNextFields ? -_size.width * 2 : _size.width * 0.08,
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Image.asset('assets/images/Women.png'),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 150.0, bottom: kDefaultPadding),
-                      child: Text(S.of(context).lorem_ipsum,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.w500)),
-                    ),
-                    SizedBox(
-                        width: 200,
-                        child: Text(
-                          S.of(context).lorem_ipsum_long,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w300,
-                              color: kSecondaryColor),
-                        ))
-                  ],
-                ),
-              )),
+              left: _isShowNextFields ? -_size.width : 0,
+              child: Greetings()),
           Positioned(
             bottom: _size.height * 0.1,
             left: _size.height * 0.025,

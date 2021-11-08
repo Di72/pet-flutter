@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "question": MessageLookupByLibrary.simpleMessage("Вопрос"),
         "quiz": MessageLookupByLibrary.simpleMessage("Викторина"),
         "search": MessageLookupByLibrary.simpleMessage("Поиск города"),
-        "sign_up": MessageLookupByLibrary.simpleMessage("Зарегистрироваться")
+        "sign_up": MessageLookupByLibrary.simpleMessage("Зарегистрироваться"),
+        "weather": MessageLookupByLibrary.simpleMessage("Погода в городе")
       };
 }

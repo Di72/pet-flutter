@@ -83,7 +83,7 @@ class _WeatherState extends State<Weather> {
                   : Padding(
                       padding:
                           const EdgeInsets.only(bottom: kDefaultPadding / 2),
-                      child: Text('Weather in the city',
+                      child: Text(S.of(context).weather,
                           style: TextStyle(fontSize: _size.width * 0.06)),
                     ),
               Container(

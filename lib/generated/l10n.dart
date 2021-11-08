@@ -130,11 +130,21 @@ class S {
     );
   }
 
-  /// `Responce`
+  /// `Question`
   String get question {
     return Intl.message(
-      'Responce',
+      'Question',
       name: 'question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Weather in the city`
+  String get weather {
+    return Intl.message(
+      'Weather in the city',
+      name: 'weather',
       desc: '',
       args: [],
     );

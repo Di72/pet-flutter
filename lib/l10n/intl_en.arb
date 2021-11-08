@@ -7,5 +7,6 @@
   "profile": "Profile",
   "quiz": "Quiz",
   "search": "Search city",
-  "question": "Responce"
+  "question": "Question",
+  "weather": "Weather in the city"
 }

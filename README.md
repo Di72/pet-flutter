@@ -1,16 +1,31 @@
-# flutter_application_1
+## Gif fast review
+<img src="https://raw.githubusercontent.com/Di72/img/master/image/gifMobileApp.gif" width="70%">
 
-A new Flutter project.
+## Features
 
-## Getting Started
+* Localization depending on the system (en, ru)
+* Dark mode / accent color
+* API for weather
+* Animations
+* GetX
+* Provider
+* Responsive layout
+* Navigation
 
-This project is a starting point for a Flutter application.
+and much more...
 
-A few resources to get you started if this is your first Flutter project:
+## Building from Source
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1. If you don't have Flutter SDK installed, please visit official [Flutter](https://flutter.dev/) site.
+2. Fetch latest source code from master branch.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+git clone https://github.com/Di72/pet-flutter.git
+```
+
+3. Run the app with Android Studio or VS Code. Or the command line:
+
+```
+flutter pub get
+flutter run
+```

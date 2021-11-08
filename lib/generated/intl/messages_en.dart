@@ -27,9 +27,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"),
         "main": MessageLookupByLibrary.simpleMessage("Main"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
-        "question": MessageLookupByLibrary.simpleMessage("Responce"),
+        "question": MessageLookupByLibrary.simpleMessage("Question"),
         "quiz": MessageLookupByLibrary.simpleMessage("Quiz"),
         "search": MessageLookupByLibrary.simpleMessage("Search city"),
-        "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP")
+        "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP"),
+        "weather": MessageLookupByLibrary.simpleMessage("Weather in the city")
       };
 }

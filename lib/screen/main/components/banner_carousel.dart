@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 
 class BannerCarousel extends StatelessWidget {
@@ -39,20 +39,21 @@ class BannerCarousel extends StatelessWidget {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                              Color(0xFF343434).withOpacity(0.4),
-                              Color(0xFF343434).withOpacity(0.15),
+                              const Color(0xFF343434).withOpacity(0.4),
+                              const Color(0xFF343434).withOpacity(0.15),
                             ],
                           ),
                         ),
                       ),
                       Padding(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: kDefaultPadding,
                             vertical: kDefaultPadding,
                           ),
                           child: Text(
                             S.of(context).lorem_ipsum,
-                            style: TextStyle(color: Colors.white, fontSize: 18),
+                            style: const TextStyle(
+                                color: Colors.white, fontSize: 18),
                           )),
                     ],
                   ),

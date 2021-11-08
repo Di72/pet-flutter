@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_application_1/controllers/answers.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 import 'package:flutter_application_1/screen/quiz/components/answers.dart';
@@ -17,7 +17,7 @@ class Body extends StatelessWidget {
 
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
+        padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,7 +26,7 @@ class Body extends StatelessWidget {
             ),
             Obx(() => Text(
                   "${S.of(context).question}: 2 + 2 = ${_controller.isRight.value ? 4 : '?'}",
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                 )),
             SizedBox(
               height: _size.height * 0.05,

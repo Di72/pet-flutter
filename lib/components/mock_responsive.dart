@@ -5,9 +5,6 @@ class MockResponsive extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Container(
-      child: Image.asset('assets/images/cat_dancing.gif'),
-    ));
+    return Center(child: Image.asset('assets/images/cat_dancing.gif'));
   }
 }

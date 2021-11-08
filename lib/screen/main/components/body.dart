@@ -13,9 +13,9 @@ class Body extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(children: [
           SizedBox(height: _size.height * 0.015),
-          Weather(),
+          const Weather(),
           SizedBox(height: _size.height * 0.05),
-          BannerCarousel(),
+          const BannerCarousel(),
           SizedBox(height: _size.height * 0.05),
           ProductScroll(size: _size)
         ]),

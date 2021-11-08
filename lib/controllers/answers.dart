@@ -1,19 +1,14 @@
 import 'package:get/get.dart';
 
 class AnswersController extends GetxController {
-  // bool _isAnswered = false;
-  // bool get isAnswered => this._isAnswered;
+  final RxBool _isRight = false.obs;
+  RxBool get isRight => _isRight;
 
-  RxBool _isRight = false.obs;
-  RxBool get isRight => this._isRight;
-
-  RxInt _selectedAns = 69.obs;
-  RxInt get selectedAns => this._selectedAns;
+  final RxInt _selectedAns = 69.obs;
+  RxInt get selectedAns => _selectedAns;
 
   void checkAns(int selectedIndex) {
     _selectedAns.value = selectedIndex;
-    print(isRight);
-    print(selectedIndex);
     if (selectedIndex == 3) _isRight.value = true;
   }
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_application_1/controllers/answers.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 

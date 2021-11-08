@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_application_1/controllers/answers.dart';
 import 'package:flutter_application_1/models/Answers.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
@@ -18,7 +18,7 @@ class FieldAnswer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: kDefaultPadding),
+      padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
       child: Obx(() => TextButton(
             onPressed: () => _controller.selectedAns.value == 69
                 ? _controller.checkAns(index)
@@ -36,7 +36,7 @@ class FieldAnswer extends StatelessWidget {
                           ? Colors.red
                           : Theme.of(context).backgroundColor,
                   width: 2),
-              padding: EdgeInsets.all(kDefaultPadding),
+              padding: const EdgeInsets.all(kDefaultPadding),
               shape: const StadiumBorder(),
             ),
             child: Center(

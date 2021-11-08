@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Menu {
   final int id;
   final String icon;

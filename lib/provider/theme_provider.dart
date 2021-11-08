@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
+// To change the theme depending on the system and switch
 class ThemeProvider extends ChangeNotifier {
   ThemeMode themeMode = ThemeMode.system;
 
@@ -25,12 +26,12 @@ class MyThemes {
     primaryColor: Colors.white,
     appBarTheme: AppBarTheme(
       color: Colors.amber[50],
-      titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
-      iconTheme: IconThemeData(color: Colors.black),
+      titleTextStyle: const TextStyle(color: Colors.black, fontSize: 20),
+      iconTheme: const IconThemeData(color: Colors.black),
     ),
-    colorScheme: ColorScheme.light(),
-    backgroundColor: Color(0xff8E97FD),
-    iconTheme: IconThemeData(color: Color(0xFFC5C5C5)),
+    colorScheme: const ColorScheme.light(),
+    backgroundColor: const Color(0xff8E97FD),
+    iconTheme: const IconThemeData(color: Color(0xFFC5C5C5)),
   );
 
   static final darkTheme = ThemeData(
@@ -38,10 +39,10 @@ class MyThemes {
       primaryColor: Colors.black,
       appBarTheme: AppBarTheme(
         color: Colors.grey[600],
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
-        iconTheme: IconThemeData(color: Colors.white),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
-      colorScheme: ColorScheme.dark(),
+      colorScheme: const ColorScheme.dark(),
       backgroundColor: Colors.red[400],
       iconTheme: IconThemeData(color: Colors.grey.shade900));
 }

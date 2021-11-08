@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 import 'package:flutter_application_1/models/Product.dart';
 
@@ -14,7 +14,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.only(left: kDefaultPadding),
+        padding: const EdgeInsets.only(left: kDefaultPadding),
         child: SizedBox(
             width: _size.width * 0.4,
             child: Column(
@@ -24,7 +24,7 @@ class ProductCard extends StatelessWidget {
                 AspectRatio(
                   aspectRatio: 1.02,
                   child: Container(
-                    padding: EdgeInsets.all(kDefaultPadding / 2),
+                    padding: const EdgeInsets.all(kDefaultPadding / 2),
                     decoration: BoxDecoration(
                       color: kSecondaryColor.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(15),
@@ -38,7 +38,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 Text(
                   "\$${demoProducts[index].price}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
                   ),

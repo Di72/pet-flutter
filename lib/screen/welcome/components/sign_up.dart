@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_application_1/generated/l10n.dart';
 
 class SignUp extends StatelessWidget {
@@ -30,12 +30,17 @@ class SignUp extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(88),
                 ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(88),
+                  borderSide:
+                      BorderSide(color: Theme.of(context).backgroundColor),
+                ),
                 filled: true,
                 contentPadding: const EdgeInsets.all(kDefaultPadding),
               ),
             ),
           ),
-          TextFormField(
+          TextField(
             textAlign: TextAlign.center,
             keyboardType: TextInputType.text,
             obscureText: true,
@@ -43,6 +48,11 @@ class SignUp extends StatelessWidget {
               hintText: 'Password',
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(88),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(88),
+                borderSide:
+                    BorderSide(color: Theme.of(context).backgroundColor),
               ),
               filled: true,
               contentPadding: const EdgeInsets.all(kDefaultPadding),

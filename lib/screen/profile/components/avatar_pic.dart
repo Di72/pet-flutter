@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants.dart';
+import 'package:flutter_application_1/helpers/constants.dart';
 import 'package:flutter_svg/svg.dart';
 
 class AvatarPic extends StatelessWidget {
@@ -18,7 +18,7 @@ class AvatarPic extends StatelessWidget {
           fit: StackFit.expand,
           clipBehavior: Clip.none,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               backgroundImage: AssetImage("assets/images/dog.jpeg"),
             ),
             Positioned(
@@ -31,10 +31,10 @@ class AvatarPic extends StatelessWidget {
                   style: TextButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50),
-                      side: BorderSide(color: Colors.white),
+                      side: const BorderSide(color: Colors.white),
                     ),
                     primary: Colors.white,
-                    backgroundColor: Color(0xFFF5F6F9).withOpacity(0.9),
+                    backgroundColor: const Color(0xFFF5F6F9).withOpacity(0.9),
                   ),
                   onPressed: () {},
                   child: SvgPicture.asset("assets/icons/Camera Icon.svg"),

@@ -55,18 +55,18 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
             width: _size.width,
             height: _size.height,
             right: _isShowNextFields ? 0 : -_size.width,
-            top: _size.height - 700,
+            top: _size.height * 0.2,
             child: const SignUp(),
           ),
           AnimatedPositioned(
               duration: const Duration(milliseconds: 500),
               width: _size.width,
               height: _size.height,
-              top: _size.height * 0.1,
+              top: _size.height * 0.12,
               left: _isShowNextFields ? -_size.width : 0,
-              child: Greetings()),
+              child: const Greetings()),
           Positioned(
-            bottom: _size.height * 0.1,
+            bottom: _size.height * 0.05,
             left: _size.height * 0.025,
             child: RotationTransition(
               turns: Tween(begin: 0.0, end: -1.0).animate(_controller),
